@@ -39,3 +39,4 @@ n.getBook("386724").then((g) => {
   "totalpages": "20",
   "favorites": "12931"
 }
+```
