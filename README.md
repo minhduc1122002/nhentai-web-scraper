@@ -3,13 +3,18 @@
 ## Example
 
 ```js
-const nhentai = require("nana-api");
+const nhentai = require("./nhentai");
 const n = new nhentai();
 
 // Get gallery from book ID
 n.getBook("386724").then((g) => {
   console.log(g);
 });
+```
+
+```
+http://localhost:8000/g/386724
+```
 
 ## Results
 
@@ -30,13 +35,34 @@ n.getBook("386724").then((g) => {
     },
     {
       "type": "character",
-      "name": "producer",
-      "url": "https://nhentai.net/character/producer/",
-      "count": "3K"
+      "name": "madoka higuchi",
+      "url": "https://nhentai.net/character/madoka-higuchi/",
+      "count": "36"
     },
-    ...
+   ...
   ],
   "totalpages": "20",
   "favorites": "12931"
 }
 ```
+## API List
+
+**nhentai.getBook(ID)**
+
+Get book API from book ID of book Link  
+return a `Book Object`
+
+**nhentai.randome()**
+
+Get random book
+return a `Book Object`
+
+**nhentai.popular()** 
+
+Get book list from popular section  
+return a `List Object`
+
+**nhentai.search(keyword, page, sort)**
+
+Get search list from keyword provided
+return a `List Object`
