@@ -1,5 +1,13 @@
 # nhentai-web-scraper
 
+A small project used to scrape nhentai.net 
+
+## Install
+
+```
+npm install
+```
+
 ## Example
 
 ```js
